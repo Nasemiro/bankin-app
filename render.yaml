@@ -3,7 +3,7 @@ services:
     name: bankin-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn backend/server:app
+    startCommand: gunicorn backend.server:app
     envVars:
       - key: FLASK_ENV
         value: production
