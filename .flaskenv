@@ -1,0 +1,6 @@
+FLASK_APP=backend/server.py
+FLASK_ENV=development
+
+SECRET_KEY=f6e901092faafaec5e1bd28a084592d1641e75a8210ce966e0372384d836e770
+JWT_SECRET_KEY=dc64e4d4e17e6e78c5becbf400abf2c63e49591432b5341a00f7a93a8b4c8b1e
+DATABASE_URL=sqlite:///backend/instance/bank.db

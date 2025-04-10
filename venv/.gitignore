@@ -1,0 +1,7 @@
+.env
+.flaskenv
+__pycache__/
+*.pyc
+*.pyo
+instance/bank.db
+migrations/
