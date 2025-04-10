@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: bankin-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend/server:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        value: yvdphLT-5aWHUmf3lnDTBlE-cj0lvZcN0-XSEOVqdGL0IWh9_cUbONMAy6zfbSFyIpN78atIPvbNP0EPT5sWDwg
+      - key: JWT_SECRET_KEY
+        value: Gaqnc8sgLjMT6SQeXO6T7PBlnqRv7c6SD4jy4JvGxXMmDv6Sv_YIBfrOgv1n9RBqC6CmcbOFuNo_ybZt9UTRw
