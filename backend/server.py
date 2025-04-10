@@ -5,7 +5,7 @@ from backend.routes import register_routes
 from backend import models
 
 app = Flask(__name__)
-app.config.from_object(DevelopmentConfig)
+app.config.from_object(ProductionConfig)
 
 # Initialize extensions
 db.init_app(app)
@@ -18,4 +18,4 @@ cors.init_app(app)
 register_routes(app)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
