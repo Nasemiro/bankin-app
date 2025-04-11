@@ -6,6 +6,8 @@ from backend import models
 
 app = Flask(__name__)
 app.config.from_object(ProductionConfig)
+print("🔍 DB URI = ", app.config["SQLALCHEMY_DATABASE_URI"])
+
 
 # Initialize extensions
 db.init_app(app)
